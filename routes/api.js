@@ -13,12 +13,13 @@ router.post("/api/workouts", ({ body }, res) => {
     });
 });
 
-
+let durationEx=0;
+// API Route to create an Exercise and attach it to the workout 
 router.put("/api/workouts/:id", (req, res) => {
   Exercise.create(req.body)
-    .then(({ _id }) => Workout.findOneAndUpdate({_id:req.params.id}, { $push: { exercises: _id } }, { new: true }))
-    .then(dbWorkout => {
-      res.json(dbWorkout);
+    .then(({ _id }) => Workout.findOneAndUpdate({_id:req.params.id}, { $inc: { totalDuration: +req.body.duration}, $push: { exercises: _id }}, { new: true }))
+    .then(dbWorkout => {      
+        res.json(dbWorkout);
     })
     .catch(err => {
       res.json(err);
