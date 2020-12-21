@@ -42,6 +42,7 @@ The user should be able to:
 - Express
 - Mongo
 - Mongoose
+- MongoDB Atlas
 
 ---
 
@@ -74,4 +75,5 @@ The user should be able to:
 
 - JQuery W3Schools, https://www.w3schools.com/jquery/
 
+- MongoDB Atlas, https://www.mongodb.com/cloud/atlas
 
