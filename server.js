@@ -22,13 +22,14 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useFindAndModify: false
 });
 
+// routes
 var routesApi = require("./routes/api.js");
 var routesHtml = require("./routes/html-routes.js");
 
 app.use(routesApi);
 app.use(routesHtml);
 
-// routes
+
 // app.use(require("./routes/api.js"));
 // app.use(require("./routes/html-routes.js"));
 
