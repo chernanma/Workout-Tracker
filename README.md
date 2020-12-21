@@ -4,7 +4,7 @@ This Workout Tracker app allows users to track their daily workouts.
 
 The complete webpage has been developed in node.js, using JQuery to manipulate the DOM, mongoose to manage the mongo dB, JQuery AJAX method to make the call out to the API, Bootstrap for styling purposes.
 
-[Click here to go to the live site](https://)
+[Click here to go to the live site](https://agile-harbor-79912.herokuapp.com/)
 
 [Click here to go to the Repository](https://github.com/chernanma/Workout-Tracker)
 
